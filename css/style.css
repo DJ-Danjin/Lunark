@@ -145,7 +145,12 @@ body{
 }
 
 .characterList .charName{
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.characterList .charLevel{
+  font-size: 13px;
+  line-height: 15px;
 }
 
 #footer{
