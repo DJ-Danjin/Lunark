@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="headerIn">
+        <h1 class="logo"><a href="">Logo</a></h1>
+        <nav class="gnb">
+          <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="">회원가입</a></li>            
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="container">
+      <div class="mainIn">
+        <div class="main_fst">
+          <div class="chrSearch">
+            <form action="">
+              <input type="text" class="searchBox">
+            </form>
+          </div>
+          <div class="chrList">
+            <ul>
+              <li class="character" id="char1">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/arcana_s.png" alt=""></div>
+                  <div class="chrInfo">
+                    <p class="charName">이름은최대열두글자까지됨</p>
+                    <div class="charLevel"><p>1415.00</p></div>
+                  </div>
+                </a>
+              </li>
+              <li class="character" id="char2">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/sorceress_s.png" alt=""></div>
+                  <div class="chrInfo">
+                    <div class="charName"><p>소서리스</p></div>
+                    <div class="charLevel"><p>1430.00</p></div>
+                  </div>
+                </a>
+              </li>
+              <li class="character" id="char3">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/summoner_s.png" alt=""></div>
+                  <div class="chrInfo">
+                    <div class="charName"><p>서머너</p></div>
+                    <div class="charLevel"><p>1355.00</p></div>
+                  </div>
+                </a>
+              </li>
+              <li class="character" id="char4">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/infighter_s.png" alt=""></div>
+                  <div class="chrInfo">
+                    <div class="charName"><p>인파이터</p></div>
+                    <div class="charLevel"><p>1355.00</p></div>
+                  </div>
+                </a>
+              </li>
+              <li class="character" id="char5">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/blade_s.png" alt=""></div>
+                  <div class="chrInfo">
+                    <div class="charName"><p>블레이드</p></div>
+                    <div class="charLevel"><p>213.77</p></div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main_snd">
+          <!-- <div class="addBtn"><a href="">Add</a></div> -->
+
+          <div class="characterList">
+            <ul>
+              <li class="character active" id="char1">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/arcana_s.png" alt=""></div>
+                  <p class="charName">이름은최대열두글자까지됨</p>
+                </a>
+              </li>
+              <li class="character" id="char2">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/sorceress_s.png" alt=""></div>
+                  <div class="charName"><p>소서리스</p></div>
+                </a>
+              </li>
+              <li class="character" id="char3">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/summoner_s.png" alt=""></div>
+                  <div class="charName"><p>서머너</p></div>
+                </a>
+              </li>
+              <li class="character" id="char4">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/infighter_s.png" alt=""></div>
+                  <div class="charName"><p>인파이터</p></div>
+                </a>
+              </li>
+              <li class="character" id="char5">
+                <a href="">
+                  <div class="classPic"><img src="./chrimg/small/blade_s.png" alt=""></div>
+                  <div class="charName"><p>블레이드</p></div>
+                </a>
+              </li>
+            </ul>
+          </div>  <!-- .characterList -->
+
+          <div class="charLevel">
+            <div class="listTitle"></div>
+            <div class="listBox">
+              <div class="box" id="levelBox1"></div>
+              <div class="box" id="levelBox2"></div>
+              <div class="box" id="levelBox3"></div>
+            </div>
+          </div>  <!-- .charLevel -->
+
+          <div class="toDoList">
+            <div class="listItem daily" id="item1">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox1-1"></div>
+                <div class="box" id="itemBox1-2"></div>
+                <div class="box" id="itemBox1-3"></div>
+              </div>
+            </div>
+            <div class="listItem daily" id="item2">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox2-1"></div>
+                <div class="box" id="itemBox2-2"></div>
+                <div class="box" id="itemBox2-3"></div>
+              </div>
+            </div>
+            <div class="listItem daily" id="item3">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox3-1"></div>
+                <div class="box" id="itemBox3-2"></div>
+                <div class="box" id="itemBox3-3"></div>
+              </div>
+            </div>
+
+            <div class="listItem weekly" id="item4">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox4-1"></div>
+                <div class="box" id="itemBox4-2"></div>
+                <div class="box" id="itemBox4-3"></div>
+              </div>
+            </div>
+            <div class="listItem weekly" id="item5">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox5-1"></div>
+                <div class="box" id="itemBox5-2"></div>
+                <div class="box" id="itemBox5-3"></div>
+              </div>
+            </div>
+            <div class="listItem weekly" id="item6">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox6-1"></div>
+                <div class="box" id="itemBox6-2"></div>
+                <div class="box" id="itemBox6-3"></div>
+              </div>
+            </div>
+
+            <div class="listItem totaly" id="item7">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox7-1"></div>
+                <div class="box" id="itemBox7-2"></div>
+                <div class="box" id="itemBox7-3"></div>
+              </div>
+            </div>
+            <div class="listItem totaly" id="item8">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox8-1"></div>
+                <div class="box" id="itemBox8-2"></div>
+                <div class="box" id="itemBox8-3"></div>
+              </div>
+            </div>
+            <div class="listItem totaly" id="item9">
+              <div class="listTitle"></div>
+              <div class="listBox">
+                <div class="box" id="itemBox9-1"></div>
+                <div class="box" id="itemBox9-2"></div>
+                <div class="box" id="itemBox9-3"></div>
+              </div>
+            </div>
+
+          </div>  <!-- .toDoList -->
+        </div>  <!-- .main_snd -->
+      </div>  <!-- .mainIn -->
+    </div>  <!-- #container -->
+
+    <footer id="footer">
+      <ul>
+        <li><a href="">사이트 소개</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">오류 / 건의</a></li>
+        <li><a href="">후원하기</a></li>
+        <li>Copyright 2021. 저작권 All Rights Reserved.</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
