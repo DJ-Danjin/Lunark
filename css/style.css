@@ -153,6 +153,35 @@ body{
   line-height: 15px;
 }
 
+.toDoList .listItem {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #444;
+  margin: 30px 0;
+}
+
+.toDoList .listBox {
+  display: flex;
+  border: 3px solid #555;
+  margin: auto;
+  padding: 10px;
+}
+
+.toDoList .listBox .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.toDoList .listBox .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.toDoList .listBox .contentWrap label {
+  margin-right: 5px;
+}
+
 #footer{
   width: 100%;
   padding: 20px;
