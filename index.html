@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prototype</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 
@@ -20,19 +26,17 @@
 </head>
 
 <body>
-  <div id="wrap">
-    <header id="header">
-      <div class="headerIn">
-        <h1 class="logo"><a href="">Logo</a></h1>
-        <nav class="gnb">
-          <ul>
-            <li><a href="">로그인</a></li>
-            <li><a href="">회원가입</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header id="header">
+    <h1 class="logo"><a href="">Logo</a></h1>
+    <nav class="gnb">
+      <ul>
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <div id="wrap">
     <div id="container">
       <div class="mainIn">
         <div class="main_fst">
@@ -41,8 +45,9 @@
               <input type="text" class="searchBox">
             </form>
           </div>
+
           <div class="chrList">
-            <ul>
+            <ul id="sortable">
               <li class="character" id="char1">
                 <a href="">
                   <div class="classPic"><img src="./img/chrimg/small/arcana_s.png" alt=""></div>
@@ -53,6 +58,10 @@
                     </div>
                   </div>
                 </a>
+                <div class="over">
+                  <p class="moveToNext">이동하기</p>
+                  <p class="deleteChracter">삭제하기</p>
+                </div>
               </li>
               <li class="character" id="char2">
                 <a href="">
@@ -66,6 +75,10 @@
                     </div>
                   </div>
                 </a>
+                <div class="over">
+                  <p class="moveToNext">이동하기</p>
+                  <p class="deleteChracter">삭제하기</p>
+                </div>
               </li>
               <li class="character" id="char3">
                 <a href="">
@@ -79,6 +92,10 @@
                     </div>
                   </div>
                 </a>
+                <div class="over">
+                  <p class="moveToNext">이동하기</p>
+                  <p class="deleteChracter">삭제하기</p>
+                </div>
               </li>
               <li class="character" id="char4">
                 <a href="">
@@ -92,6 +109,10 @@
                     </div>
                   </div>
                 </a>
+                <div class="over">
+                  <p class="moveToNext">이동하기</p>
+                  <p class="deleteChracter">삭제하기</p>
+                </div>
               </li>
               <li class="character" id="char5">
                 <a href="">
@@ -105,10 +126,14 @@
                     </div>
                   </div>
                 </a>
+                <div class="over">
+                  <p class="moveToNext">이동하기</p>
+                  <p class="deleteChracter">삭제하기</p>
+                </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </div> <!-- .chrList -->
+        </div> <!-- .main_fst -->
 
         <div class="main_snd">
           <div class="backBtn"><a href="">Back</a></div>
@@ -456,16 +481,17 @@
 
     <script src="./js/script.js"></script>
 
-    <footer id="footer">
-      <ul>
-        <li><a href="">사이트 소개</a></li>
-        <li><a href="">개인정보처리방침</a></li>
-        <li><a href="">오류 / 건의</a></li>
-        <li><a href="">후원하기</a></li>
-        <li>Copyright 2021. 저작권 All Rights Reserved.</li>
-      </ul>
-    </footer>
-  </div>
+  </div> <!-- #wrap -->
+
+  <footer id="footer">
+    <ul>
+      <li><a href="">사이트 소개</a></li>
+      <li><a href="">개인정보처리방침</a></li>
+      <li><a href="">오류 / 건의</a></li>
+      <li><a href="">후원하기</a></li>
+      <li>Copyright 2021. 저작권 All Rights Reserved.</li>
+    </ul>
+  </footer>
 </body>
 
 </html>

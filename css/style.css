@@ -2,6 +2,19 @@
 
 body {
   background-color: #303030;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  /* background-color: skyblue; */
 }
 
 #wrap {
@@ -9,21 +22,6 @@ body {
   min-width: 320px;
   margin: 0 auto;
   overflow: hidden;
-}
-
-#header {
-  width: 100%;
-  /* background-color: cornflowerblue; */
-}
-
-.headerIn {
-  width: 1100px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  /* background-color: skyblue; */
 }
 
 .logo a {
@@ -122,9 +120,57 @@ body {
   text-overflow: ellipsis;
 }
 
+.main_fst .chrList .character {
+  position: relative;
+}
+
+.main_fst .chrList .character .over {
+  opacity: 0.9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  background-color: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_fst .chrList .character .over p {
+  opacity: 0;
+  text-indent: -999999px;
+  background-size: 100%;
+  position: absolute;
+}
+
+.main_fst .chrList .character .over .moveToNext {
+  width: 30px;
+  height: 30px;
+  background-image: url(/img/icon/right-arrow.png);
+  left: 45%;
+}
+
+.main_fst .chrList .character .over .deleteChracter {
+  width: 15px;
+  height: 15px;
+  background-image: url(/img/icon/clear.png);
+  top: 8px;
+  right: 8px;
+}
+
 .main_snd {
   display: none;
   margin-top: 20px;
+}
+
+.main_snd .backBtn a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -999999px;
+  background-image: url(/img/icon/back.png);
+  background-size: 100%;
 }
 
 .slick-dots {
@@ -223,10 +269,9 @@ body {
 #footer {
   width: 100%;
   padding: 20px;
-  /* background-color: red; */
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 0;
+  /* background-color: red; */
 }
 
 #footer ul {
